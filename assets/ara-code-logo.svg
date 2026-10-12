@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AraCode Studio">
+  <defs>
+    <radialGradient id="orb" cx="35%" cy="24%" r="82%">
+      <stop offset="0" stop-color="#143f79"/>
+      <stop offset=".42" stop-color="#0b2447"/>
+      <stop offset=".76" stop-color="#06152c"/>
+      <stop offset="1" stop-color="#030b18"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="82" y1="58" x2="430" y2="454" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#65fff3"/>
+      <stop offset=".38" stop-color="#28d8ff"/>
+      <stop offset=".72" stop-color="#1976ff"/>
+      <stop offset="1" stop-color="#64fff2"/>
+    </linearGradient>
+    <linearGradient id="leftA" x1="155" y1="400" x2="272" y2="95" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#075dff"/>
+      <stop offset=".48" stop-color="#0b93ff"/>
+      <stop offset="1" stop-color="#54f8f0"/>
+    </linearGradient>
+    <linearGradient id="rightA" x1="270" y1="92" x2="377" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6afff5"/>
+      <stop offset=".48" stop-color="#20d8f4"/>
+      <stop offset="1" stop-color="#1680ff"/>
+    </linearGradient>
+    <linearGradient id="cross" x1="183" y1="352" x2="383" y2="279" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#126bff"/>
+      <stop offset=".5" stop-color="#17cdf4"/>
+      <stop offset="1" stop-color="#65fff4"/>
+    </linearGradient>
+    <linearGradient id="bracket" x1="68" y1="256" x2="444" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#62fff4"/>
+      <stop offset=".55" stop-color="#22ccff"/>
+      <stop offset="1" stop-color="#2377ff"/>
+    </linearGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.05 0 0 0 0 0.82 0 0 0 0 1 0 0 0 .55 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="symbolGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="circle"><circle cx="256" cy="256" r="238"/></clipPath>
+  </defs>
+
+  <circle cx="256" cy="256" r="238" fill="url(#orb)" filter="url(#softGlow)"/>
+  <circle cx="256" cy="256" r="230" fill="none" stroke="url(#rim)" stroke-width="8" opacity=".96"/>
+  <circle cx="256" cy="256" r="214" fill="none" stroke="#68fff3" stroke-width="2" opacity=".18"/>
+
+  <g clip-path="url(#circle)">
+    <ellipse cx="184" cy="130" rx="145" ry="92" fill="#1b7dff" opacity=".10"/>
+    <ellipse cx="330" cy="374" rx="155" ry="110" fill="#0fe5df" opacity=".07"/>
+  </g>
+
+  <g filter="url(#symbolGlow)">
+    <path d="M105 203 61 256l44 53" fill="none" stroke="url(#bracket)" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m407 203 44 53-44 53" fill="none" stroke="url(#bracket)" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M251 92c-19 2-33 14-41 35L125 377c-7 21 3 40 24 47 21 7 40-4 47-25l79-229c6-18 3-37-8-52-5-8-10-16-16-26Z" fill="url(#leftA)"/>
+    <path d="M268 94c21 2 37 15 44 36l82 248c7 21-4 39-25 45-20 6-39-6-46-27l-78-229c-6-18-3-37 8-52 4-7 9-14 15-21Z" fill="url(#rightA)"/>
+    <path d="m244 160 51 88-34 34-38-55Z" fill="#07389e" opacity=".96"/>
+    <path d="m181 343 129-57c18-8 39-3 52 12l25 25-179 68Z" fill="url(#cross)"/>
+    <path d="M230 117c16-18 35-24 55-15" fill="none" stroke="#9afff9" stroke-width="7" stroke-linecap="round" opacity=".72"/>
+    <path d="M184 343c17-7 31-10 43-9" fill="none" stroke="#6ffcf6" stroke-width="5" stroke-linecap="round" opacity=".42"/>
+  </g>
+</svg>

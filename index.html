@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#080e1c">
+<link rel="icon" type="image/svg+xml" href="/assets/ara-code-logo.svg">
+<link rel="apple-touch-icon" href="/assets/ara-code-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <meta name="description" content="Ara Code Studio is an independently developed mobile-first AI-assisted coding environment for Android. Explore its editor, terminal, previews, and evolving AI workflows.">
 <meta property="og:title" content="Ara Code Studio — Build beyond the desktop">
 <meta property="og:description" content="An independent Android coding environment with AI-assisted workflows, a terminal and workspace tools.">
@@ -27,11 +32,29 @@ section{padding:75px 0}.section-head{max-width:730px;margin-bottom:36px}.kicker{
 </style>
 <style>
 .showcase-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.shot{border:1px solid #344862;border-radius:18px;overflow:hidden;background:#101c2c}.shot-image{display:grid;place-items:center;min-height:245px;background:radial-gradient(circle at center,#173e55,#091421)}.shot-image img{width:100%;max-height:380px;object-fit:contain;display:block}.shot-image .pending{font-size:13px;color:#b0bed1;text-align:center;padding:30px}.shot figcaption{padding:16px 18px;font-size:14px;color:#c9d8ec}.shot figcaption strong{display:block;color:#fff;font-size:16px;margin-bottom:2px}.shot figcaption span{font-size:13px;color:#94a7c3}@media(max-width:830px){.showcase-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:540px){.showcase-grid{grid-template-columns:1fr}}
+</style><style id="site-v2">
+:root{--bg:#080d19;--panel:#111c31;--line:#314262;--muted:#afc0d7;--blue:#7db7ff;--cyan:#68e5ed}
+body{font-family:'DM Sans',Inter,system-ui,sans-serif;letter-spacing:-.008em}
+h1,h2,h3,.brand{font-family:Manrope,'DM Sans',system-ui,sans-serif}
+h1,h2{letter-spacing:-.055em}
+.brand-image{height:46px;width:46px;object-fit:contain;filter:drop-shadow(0 0 12px #3186f566);flex-shrink:0}
+.nav{position:relative;z-index:4}.navlinks{gap:22px}.navlinks a:not(.btn){transition:color .2s}.navlinks a:not(.btn):hover{color:#8aefff}
+.hero{padding-top:104px;padding-bottom:115px}.hero h1{letter-spacing:-.073em}.eyebrow{border-color:#4776a4;background:#152b47;color:#b5ecff}.lede{font-size:18px;line-height:1.82;color:#b8c9e1}
+.editor{border-color:#3f618f;box-shadow:0 35px 100px #000a,0 0 90px #236eff1f}.card{transition:transform .2s,border-color .2s,box-shadow .2s}.card:hover{transform:translateY(-5px);border-color:#6e9ee6;box-shadow:0 16px 40px #0005}
+.shot{transition:transform .25s,border-color .25s}.shot:hover{transform:translateY(-4px);border-color:#638fd5}.shot-image{min-height:290px;padding:14px}.shot-image img{max-height:390px;border-radius:11px;transition:transform .25s;cursor:zoom-in}.shot-image img:hover{transform:scale(1.018)}
+.section-head{max-width:775px}.section-head p{line-height:1.8}.callout{box-shadow:0 18px 65px #0003}
+#image-dialog{border:1px solid #5e7ca9;background:#101929;max-width:min(92vw,900px);max-height:92vh;border-radius:20px;padding:20px;color:#eaf4ff;box-shadow:0 20px 100px #000c}
+#image-dialog::backdrop{background:#010712e6;backdrop-filter:blur(10px)}
+#image-dialog img{display:block;width:auto;max-width:100%;max-height:76vh;margin:auto;object-fit:contain;border-radius:10px}
+.dialog-bar{display:flex;gap:15px;align-items:center;justify-content:space-between;margin-bottom:14px}.dialog-bar button{color:white;background:#263b57;border:1px solid #647c9a;border-radius:9px;padding:5px 12px;cursor:pointer}
+@media(max-width:850px){.navlinks>a:not(.navcta){display:none}.hero{padding-top:65px}}
+@media(max-width:560px){.hero h1{font-size:clamp(40px,10vw,54px)}.hero{padding-top:46px}.brand{font-size:15px}.brand-image{height:40px;width:40px}.shot-image{min-height:260px}.shot-image img{max-height:450px}.section-head p{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.shot,.card,.shot-image img{transition:none!important}}
 </style></head>
 <body>
-<header class="wrap nav"><a class="brand" href="#top" aria-label="Ara Code Studio home"><span class="mark">&lt;/&gt;</span>Ara Code Studio</a><nav class="navlinks" aria-label="Main navigation"><a href="#features">Features</a><a href="#screenshots">Screenshots</a><a href="#about">About</a><a href="#roadmap">Roadmap</a><a href="#evidence">Project facts</a><a href="mailto:founder@e-link.web.id" class="btn ghost navcta">Contact ↗</a></nav></header>
+<header class="wrap nav"><a class="brand" href="#top" aria-label="Ara Code Studio home"><img class="brand-image" src="/assets/ara-code-logo.svg" width="46" height="46" alt="" aria-hidden="true">Ara Code Studio</a><nav class="navlinks" aria-label="Main navigation"><a href="#features">Features</a><a href="#screenshots">Screenshots</a><a href="#about">About</a><a href="#roadmap">Roadmap</a><a href="#evidence">Project facts</a><a href="mailto:founder@e-link.web.id" class="btn ghost navcta">Contact ↗</a></nav></header>
 <main id="top">
-<div class="wrap hero"><div><span class="eyebrow">Independent project · In active development</span><h1>Build beyond <span class="grad">the desktop.</span></h1><p class="lede">Meet Ara Code Studio — a mobile-first coding environment for Android, combining development tools with evolving AI-assisted workflows. Create, inspect, and iterate wherever you are.</p><div class="actions"><a class="btn primary" href="#features">See features →</a><a class="btn ghost" href="https://github.com/ar4kiara" target="_blank" rel="noopener noreferrer">Meet the developer ↗</a></div><div class="fine">Android-first • Independently built • Version 1.2.2 (documented) • Not yet a public release</div></div>
+<div class="wrap hero"><div><span class="eyebrow">Independent project · In active development</span><h1>Build beyond <span class="grad">the desktop.</span></h1><p class="lede">Ara Code Studio brings editing, terminal tools, project management, and evolving AI-assisted workflows to Android. Built independently for developers who create beyond their desks.</p><div class="actions"><a class="btn primary" href="#features">See features →</a><a class="btn ghost" href="https://github.com/ar4kiara" target="_blank" rel="noopener noreferrer">Meet the developer ↗</a></div><div class="fine">Android-first • Independently built • Version 1.2.2 (documented) • Not yet a public release</div></div>
 <div class="editor" aria-label="Illustrative mock-up of a code editor interface"><div class="editor-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="filename">Ara Code Studio / workspace</span></div><div class="editor-body"><div class="rail"><span>▦</span><span>⌕</span><span>◇</span><span>⚙</span></div><div class="code"><span class="number">01</span>  <span class="purple">const</span> project = {<br><span class="number">02</span>    <span class="blue">name</span>: <span class="green">'Ara Code Studio'</span>,<br><span class="number">03</span>    <span class="blue">platform</span>: <span class="green">'Android'</span>,<br><span class="number">04</span>    <span class="blue">tools</span>: [<br><span class="number">05</span>      <span class="green">'Editor'</span>, <span class="green">'Terminal'</span>,<br><span class="number">06</span>      <span class="green">'AI workflows'</span><br><span class="number">07</span>    ],<br><span class="number">08</span>    <span class="blue">mission</span>: <span class="yellow">'Build anywhere'</span><br><span class="number">09</span>  };<br><span class="number">10</span>  <span class="purple">export default</span> project;</div></div><div class="terminal"><strong>● TERMINAL</strong><br>~/workspace $ node --version<br>v22.x<br>~/workspace $ <span class="green">ready_</span></div><div class="statusbar"><span>◉ Android workspace</span><span>JavaScript · UTF-8</span></div></div></div>
 <section id="features" class="wrap"><div class="section-head"><span class="kicker">What we're building</span><h2>A developer workspace in your pocket.</h2><p>Built around practical tools for mobile development, with AI assistance as a central direction for ongoing work.</p></div><div class="cards">
 <article class="card"><span class="ico">⌘</span><h3>Code editing</h3><p>Monaco-based editing, multi-file workspaces, search and mobile-oriented code navigation.</p></article>
@@ -57,6 +80,21 @@ section{padding:75px 0}.section-head{max-width:730px;margin-bottom:36px}.kicker{
 <div class="minirow"><span class="tag">03</span><div><h3>Is Claude already integrated?</h3><p>Claude API integration is a development goal. The project explores AI workflows and compatible model endpoints, but no existing Anthropic partnership or official approval is claimed.</p></div></div>
 <div class="minirow"><span class="tag">04</span><div><h3>How can the project be verified?</h3><p>Contact <a href="mailto:founder@e-link.web.id" style="color:#91ccff;text-decoration:underline">founder@e-link.web.id</a> for product information and available demonstration material. The public website repository is <a href="https://github.com/ar4kiara/aracode-website" target="_blank" rel="noopener noreferrer" style="color:#91ccff;text-decoration:underline">available on GitHub</a>.</p></div></div>
 </div></section><section class="wrap"><div class="callout"><div><span class="kicker">Get in touch</span><h2>Interested in Ara Code Studio?</h2><p>For product questions, collaboration, or early feedback, contact the independent developer.</p></div><a class="btn primary" href="mailto:founder@e-link.web.id?subject=Ara%20Code%20Studio%20Inquiry">founder@e-link.web.id ↗</a></div></section>
-</main><footer class="wrap foot"><span>© <span id="year">2026</span> Ara Code Studio. An independent software project.</span><nav aria-label="Footer"><a href="https://github.com/ar4kiara" target="_blank" rel="noopener noreferrer">GitHub</a><a href="mailto:founder@e-link.web.id">Email</a><a href="#top">Back to top ↑</a></nav></footer>
+</main><dialog id="image-dialog" aria-label="Screenshot enlarged"><div class="dialog-bar"><strong id="image-dialog-title">Ara Code Studio screenshot</strong><button type="button" id="image-close" aria-label="Close screenshot">Close ✕</button></div><img id="image-dialog-img" src="" alt=""></dialog><footer class="wrap foot"><span>© <span id="year">2026</span> Ara Code Studio. An independent software project.</span><nav aria-label="Footer"><a href="https://github.com/ar4kiara" target="_blank" rel="noopener noreferrer">GitHub</a><a href="mailto:founder@e-link.web.id">Email</a><a href="#top">Back to top ↑</a></nav></footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body></html>
+<script>
+(function(){
+  const modal=document.getElementById('image-dialog');
+  const full=document.getElementById('image-dialog-img');
+  const title=document.getElementById('image-dialog-title');
+  const close=document.getElementById('image-close');
+  document.querySelectorAll('.shot-image img').forEach(img=>{
+    img.tabIndex=0;img.setAttribute('role','button');img.setAttribute('aria-label','Enlarge '+img.alt);
+    function open(){full.src=img.src;full.alt=img.alt;title.textContent=img.alt.replace('Ara Code Studio — ','');if(typeof modal.showModal==='function')modal.showModal();}
+    img.addEventListener('click',open);
+    img.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+  });
+  close.addEventListener('click',()=>modal.close());
+  modal.addEventListener('click',e=>{if(e.target===modal)modal.close()});
+})();
+</script></body></html>
